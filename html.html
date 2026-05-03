@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafe3.css">
+</head>
+
+<body>
+
+<!-- ===== Background Video ===== -->
+<video id="bgVideo" autoplay muted loop playsinline class="video-bg">
+  <source src="cafeimage/Cinematic Coffee B-Roll - Sony a7iii & Tamron 28-75mm f2.8 _ Café Real.mp4" type="video/mp4">
+</video>
+
+<button id="soundBtn" class="sound-btn">🔊 Enable Sound</button>
+
+
+
+
+<!-- ===== Dark Overlay ===== -->
+<div class="overlay"></div>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+    <div class="logo">🍵MyCafe</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cafe-story">Story</a></li>
+        <li><a href="#collaboration">Collaborations</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact-dark">Contact</a></li>
+
+       
+    </ul>
+</nav>
+
+<!-- ===== Home Section ===== -->
+<section id="home" class="home">
+    <div class="home-content">
+    <h1 id="heroTitle">Welcome to 🍵MyCafe</h1>
+    <p></p>
+</div>
+
+</section>
+
+<script src="cafe3.js"></script>
+
+
+<!--+================================================================================================================-->
+
+<!-- ===== Menu Section ===== -->
+<section id="menu" class="menu-section">
+
+    <h2 class="menu-title">Our Menu</h2>
+
+    <!-- Filter Buttons -->
+    <div class="menu-filters">
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('veg')">Veg</button>
+        <button onclick="filterMenu('nonveg')">Non-Veg</button>
+        <button onclick="filterMenu('drinks')">Drinks</button>
+    </div>
+
+    <div class="menu-grid">
+
+       
+
+        <!-- Item -->
+        <div class="menu-card veg">
+            <img src="cafeimage/paneer tikka.jpg">
+            <h3>Paneer Tikka</h3>
+            <p class="price">₹249</p>
+        </div>
+
+        <div class="menu-card veg">
+            <img src="cafeimage/farmhouse.jpg">
+            <h3>Farmhouse Pizza</h3>
+            <p class="price">₹399</p>
+        </div>
+
+        <div class="menu-card nonveg">
+            <img src="cafeimage/grilled chicken.jpg">
+            <h3>Grilled Chicken</h3>
+            <p class="price">₹349</p>
+        </div>
+
+        <div class="menu-card nonveg">
+            <img src="cafeimage/pexels-buselliyy-33253846.jpg">
+            <h3>Chicken Burger</h3>
+            <p class="price">₹199</p>
+        </div>
+
+        <div class="menu-card drinks">
+            <img src="cafeimage/mojito.jpg">
+            <h3>Mojito</h3>
+            <p class="price">₹129</p>
+        </div>
+
+     
+
+      
+
+        <div class="menu-card drinks">
+            <img src="cafeimage/cold coffee.jpg">
+            <h3>Cold Coffee</h3>
+            <p class="price">₹149</p>
+        </div>
+
+         <div class="menu-card nonveg">
+            <img src="cafeimage/Cappuccino.jpg">
+            <h3>Cappuccino</h3>
+            <p class="price">₹349</p>
+        </div>
+
+        <div class="menu-card nonveg">
+            <img src="cafeimage/Espresso.jpg">
+            <h3>Espresso</h3>
+            <p class="price">₹199</p>
+        </div>
+
+        <div class="menu-card drinks">
+            <img src="cafeimage/pasta.jpg">
+            <h3>Pasta</h3>
+            <p class="price">₹129</p>
+        </div>
+
+        <div class="menu-card drinks">
+            <img src="cafeimage/italian pizza.jpg">
+            <h3>Itanial Pizza</h3>
+            <p class="price">₹149</p>
+        </div>
+
+      
+
+    </div>
+
+</section>
+
+<script src="cafe3.js"></script>
+
+<!--============================================================================================================-->
+<section id="cafe-story">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="story-video">
+    <source src="videos/cafe.mp4" type="video/mp4">
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="story-overlay"></div>
+
+  <!-- Story Content -->
+  <div class="story-content">
+    <h2>Our Story</h2>
+    <p id="typing-text"></p>
+  </div>
+
+</section>
+
+<script src="cafe3.js"></script>
+
+<!--======================================================================================-->
+
+<section id="collaboration">
+  <h2 class="section-title">Our Delivery Partners</h2>
+  <div id="swiggyRating" class="rating"></div>
+
+
+  <div class="partners-container">
+
+    <!-- Swiggy -->
+    <a href="https://www.swiggy.com" target="_blank" class="partner-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy">
+      <h3>Swiggy</h3>
+      <div class="rating">⭐ 4.5 / 5</div>
+      <p>Order our coffee & snacks on Swiggy</p>
+    </a>
+
+    <!-- Zomato -->
+    <a href="https://www.zomato.com" target="_blank" class="partner-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="Zomato">
+      <h3>Zomato</h3>
+      <div class="rating">⭐ 4.3 / 5</div>
+      <p>Available for delivery on Zomato</p>
+    </a>
+
+   <!-- Blinkit -->
+<a href="https://blinkit.com" target="_blank" class="partner-card">
+  <img src="cafeimage/Screenshot 2026-01-29 200428.png" alt="Blinkit">
+  <h3>Blinkit</h3>
+  <div class="rating">⭐ 4.2 / 5</div>
+  <p>Quick delivery partner</p>
+</a>
+
+
+
+
+  </div>
+</section>
+
+<script>
+function setRating(id, value) {
+  document.getElementById(id).innerText = "⭐ " + value + " / 5";
+}
+</script>
+
+
+<!--=================================================================================================================-->
+
+<section id="location">
+  <h2 class="location-title">Find Us in Jalgaon</h2>
+
+  <div class="location-container">
+    
+    <div class="location-info">
+      <h3>Our Cafe Location</h3>
+      <p>
+        Near City Center,<br>
+        Jalgaon, Maharashtra, India
+      </p>
+
+      <a href="https://www.google.com/maps/place/Jalgaon" target="_blank" class="map-btn">
+        Open in Google Maps
+      </a>
+    </div>
+
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps?q=Jalgaon&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!--================================================================================================================-->
+
+<section id="contact-dark">
+  <div class="contact-wrapper">
+
+    <h2>Contact & Connect With Us</h2>
+    <p class="contact-sub">
+      Follow us on social media and order anytime
+    </p>
+
+    <div class="social-grid">
+
+      <a href="https://instagram.com/yourpage" target="_blank" class="social-card insta">
+        <span>📸</span>
+        <h3>Instagram</h3>
+        <p>@yourcafe</p>
+      </a>
+
+      <a href="https://facebook.com/yourpage" target="_blank" class="social-card fb">
+        <span>📘</span>
+        <h3>Facebook</h3>
+        <p>Your Cafe</p>
+      </a>
+
+      <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="social-card wa">
+        <span>💬</span>
+        <h3>WhatsApp</h3>
+        <p>Chat With Us</p>
+      </a>
+
+      <a href="https://twitter.com/yourpage" target="_blank" class="social-card x">
+        <span>✖️</span>
+        <h3>X</h3>
+        <p>@yourcafe</p>
+      </a>
+
+    </div>
+
+    <div class="contact-extra">
+      <p>📞 +91 XXXXX XXXXX</p>
+      <p>✉️ Mycafe@email.com</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
